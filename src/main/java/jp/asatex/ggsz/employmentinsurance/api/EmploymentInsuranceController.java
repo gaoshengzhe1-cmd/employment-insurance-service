@@ -17,6 +17,11 @@ public class EmploymentInsuranceController {
 
     private final EmploymentInsuranceService employmentInsuranceService;
 
+    @GetMapping("/")
+    public ResponseEntity<String> health() {
+        return ResponseEntity.ok("Employment Insurance Service is running");
+    }
+
     @GetMapping("/calculate")
     public Mono<ResponseEntity<EmploymentInsuranceDto>> calculateEmploymentInsurance(
             @RequestParam Integer monthlySalary,
