@@ -19,7 +19,12 @@ public class EmploymentInsuranceController {
 
     @GetMapping("/")
     public ResponseEntity<String> health() {
-        return ResponseEntity.ok("Employment Insurance Service is running");
+        return ResponseEntity.ok("Employment Insurance Service is running - " + java.time.LocalDateTime.now());
+    }
+
+    @GetMapping("/health")
+    public ResponseEntity<String> simpleHealth() {
+        return ResponseEntity.ok("OK");
     }
 
     @GetMapping("/calculate")
