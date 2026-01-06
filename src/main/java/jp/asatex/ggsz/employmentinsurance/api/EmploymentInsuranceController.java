@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 @Slf4j
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/health-insurance")
+@RequestMapping("/employment-insurance")
 @RequiredArgsConstructor
 public class EmploymentInsuranceController {
 
